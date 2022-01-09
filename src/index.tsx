@@ -7,7 +7,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import { BrowserRouter } from 'react-router-dom';
 
-const value :number = 97;
+const value :number = 96;
 
 function reducer(state = value){
   return state
@@ -18,7 +18,7 @@ let store = createStore(reducer)
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter>
         <App />
       </BrowserRouter>
     </Provider>
