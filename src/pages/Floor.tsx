@@ -15,7 +15,7 @@ function FloorContent () {
   return (
     <div className="Floor">
       <div className="Floor_back" style={{
-      backgroundImage: `url(${process.env.PUBLIC_URL + 'https://irisiris99.github.io/blanc/imgs/background_2.jpg'})`
+      backgroundImage: `url(https://irisiris99.github.io/blanc/imgs/background_2.jpg)`
     }}>
         <p>The house consists of three floors: parking and leisure, first floor (bedroom floor), and second floor (living space and swimming pool).</p>
       </div>
@@ -29,7 +29,7 @@ function FloorContent () {
         </div>
         <div className="Ent_FloorImg"> 
           <div className="floor_img_box">
-            <img src={process.env.PUBLIC_URL + 'https://irisiris99.github.io/blanc/imgs/ent_floor_img1.jpg'} />
+            <img src='https://irisiris99.github.io/blanc/imgs/ent_floor_img1.jpg' />
           </div>
           <div className="Floor_font">
             <div>
@@ -42,12 +42,12 @@ function FloorContent () {
             </div>
           </div>
           <div className="Floor_img">
-            <img src={process.env.PUBLIC_URL + 'https://irisiris99.github.io/blanc/imgs/ent_floor_img2.jpg'} />
-            <img src={process.env.PUBLIC_URL + 'https://irisiris99.github.io/blanc/imgs/ent_floor_img3.jpg'} />
-            <img className="floor" src={process.env.PUBLIC_URL + 'https://irisiris99.github.io/blanc/imgs/ent_floor_img4.jpg'} />
-            <img src={process.env.PUBLIC_URL + 'https://irisiris99.github.io/blanc/imgs/ent_floor_img5.jpg'} />
+            <img src='https://irisiris99.github.io/blanc/imgs/ent_floor_img2.jpg' />
+            <img src='https://irisiris99.github.io/blanc/imgs/ent_floor_img3.jpg' />
+            <img className="floor" src='https://irisiris99.github.io/blanc/imgs/ent_floor_img4.jpg' />
+            <img src='https://irisiris99.github.io/blanc/imgs/ent_floor_img5.jpg' />
           </div>
-          <img src={process.env.PUBLIC_URL + 'https://irisiris99.github.io/blanc/imgs/first_floor_img1.jpg'} />
+          <img src='https://irisiris99.github.io/blanc/imgs/first_floor_img1.jpg' />
           <div className="Floor_font">
             <div>
               <h1>First Floor</h1>
@@ -58,10 +58,10 @@ function FloorContent () {
             </div>
           </div>
           <div className="Floor_img">
-            <img id="floor2"src={process.env.PUBLIC_URL + 'https://irisiris99.github.io/blanc/imgs/first_floor_img2.jpg'} />
-            <img src={process.env.PUBLIC_URL + 'https://irisiris99.github.io/blanc/imgs/first_floor_img3.jpg'} />
-            <img src={process.env.PUBLIC_URL + 'https://irisiris99.github.io/blanc/imgs/first_floor_img4.jpg'} />
-            <img src={process.env.PUBLIC_URL + 'https://irisiris99.github.io/blanc/imgs/first_floor_img5.jpg'} />
+            <img id="floor2" src='https://irisiris99.github.io/blanc/imgs/first_floor_img2.jpg' />
+            <img src='https://irisiris99.github.io/blanc/imgs/first_floor_img3.jpg' />
+            <img src='https://irisiris99.github.io/blanc/imgs/first_floor_img4.jpg' />
+            <img src='https://irisiris99.github.io/blanc/imgs/first_floor_img5.jpg' />
           </div>
           <div className="Floor_font">
             <div>
@@ -73,9 +73,9 @@ function FloorContent () {
             </div>
           </div>
           <div className="Floor_img">
-            <img src={process.env.PUBLIC_URL + 'https://irisiris99.github.io/blanc/imgs/sec_floor_img2.jpg'} />
-            <img className="floor" src={process.env.PUBLIC_URL + 'https://irisiris99.github.io/blanc/imgs/sec_floor_img3.jpg'} />
-            <img src={process.env.PUBLIC_URL + 'https://irisiris99.github.io/blanc/imgs/sec_floor_img4.jpg'} />
+            <img src='https://irisiris99.github.io/blanc/imgs/sec_floor_img2.jpg' />
+            <img className="floor" src='https://irisiris99.github.io/blanc/imgs/sec_floor_img3.jpg' />
+            <img src='https://irisiris99.github.io/blanc/imgs/sec_floor_img4.jpg' />
           </div>
         </div>
       </div>
@@ -85,20 +85,20 @@ function FloorContent () {
         </div>
         <div className="floor_icons">
           <div>
-            <img src={process.env.PUBLIC_URL + 'https://irisiris99.github.io/blanc/imgs/floor_icon1.png'} />
+            <img src='https://irisiris99.github.io/blanc/imgs/floor_icon1.png' />
             <p>Aerotermal system for clima and heating</p>
           </div>
           <div>
-            <img src={process.env.PUBLIC_URL + 'https://irisiris99.github.io/blanc/imgs/floor_icon2.png'} />
+            <img src='https://irisiris99.github.io/blanc/imgs/floor_icon2.png'/>
             <p>Floor heating in all the spaces of the house</p>
             <h5>(including parking area)</h5>
           </div>
           <div>
-            <img src={process.env.PUBLIC_URL + 'https://irisiris99.github.io/blanc/imgs/floor_icon3.png'} />
+            <img src='https://irisiris99.github.io/blanc/imgs/floor_icon3.png' />
             <p>Dali and KNX Domotic systems</p>
           </div>
         </div>
-        <img src={process.env.PUBLIC_URL + 'https://irisiris99.github.io/blanc/imgs/features_img.jpg'} />
+        <img src='https://irisiris99.github.io/blanc/imgs/features_img.jpg' />
       </div>
     </div>
   )

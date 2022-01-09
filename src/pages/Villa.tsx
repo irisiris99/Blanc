@@ -26,7 +26,7 @@ function VillaContent () {
       </div>
       <div className="house_content">
         <div>
-          <img src={process.env.PUBLIC_URL + 'http//irisiris99.github.io/blanc/imgs/Villaimg1.jpg'} />
+          <img src='https://irisiris99.github.io/blanc/imgs/Villaimg1.jpg' />
         </div>
         <div className="house_content_font">
           <h3>The project of this house of more than 669 m2 was born from the restructuration of a house build in 1989.</h3>
@@ -34,30 +34,30 @@ function VillaContent () {
         </div>
       </div>
       <div className="house_content2">
-        <img src={process.env.PUBLIC_URL + 'https://irisiris99.github.io/blanc/imgs/Villaimg2.jpg'} />
+        <img src='https://irisiris99.github.io/blanc/imgs/Villaimg2.jpg' />
       </div>
       <div className="rooms">
         <div>
           <p>Entertainment</p>
-          <img src={process.env.PUBLIC_URL + 'https://irisiris99.github.io/blanc/imgs/Room1.jpg'} />
+          <img src='https://irisiris99.github.io/blanc/imgs/room1.jpg' />
         </div>
         <div>
           <p>Kitchen</p>
-          <img src={process.env.PUBLIC_URL + 'https://irisiris99.github.io/blanc/imgs/Room2.jpg'} />
+          <img src='https://irisiris99.github.io/blanc/imgs/room2.jpg' />
         </div>
         <div>
           <p>Bed Room</p>
-          <img src={process.env.PUBLIC_URL + 'https://irisiris99.github.io/blanc/imgs/Room3.jpg'} />
+          <img src='https://irisiris99.github.io/blanc/imgs/Room3.jpg' />
         </div>
       </div>
       <div className="rooms2">
         <div>
           <p>Fitness Room</p>
-          <img src={process.env.PUBLIC_URL + 'https://irisiris99.github.io/blanc/imgs/Room4.jpg'} />
+          <img src='https://irisiris99.github.io/blanc/imgs/Room4.jpg' />
         </div>
         <div>
           <p>Dress Room</p>
-          <img src={process.env.PUBLIC_URL + 'https://irisiris99.github.io/blanc/imgs/Room5.jpg'} />
+          <img src='https://irisiris99.github.io/blanc/imgs/Room5.jpg' />
         </div>
       </div>
     </div>
