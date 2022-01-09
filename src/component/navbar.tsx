@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar_logo">
-        <Link to="/*"><img src={process.env.PUBLIC_URL + '/imgs/logo.png'} /></Link>
+        <Link to="/*"><img src='https://irisiris99.github.io/blanc/imgs/logo.png' /></Link>
       </div>
       <ul>
         <li><Link to="/Villa">THE VILLA</Link></li>
