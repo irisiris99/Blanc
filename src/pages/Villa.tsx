@@ -47,17 +47,17 @@ function VillaContent () {
         </div>
         <div>
           <p>Bed Room</p>
-          <img src='https://irisiris99.github.io/blanc/imgs/Room3.jpg' />
+          <img src='https://irisiris99.github.io/blanc/imgs/room3.jpg' />
         </div>
       </div>
       <div className="rooms2">
         <div>
           <p>Fitness Room</p>
-          <img src='https://irisiris99.github.io/blanc/imgs/Room4.jpg' />
+          <img src='https://irisiris99.github.io/blanc/imgs/room4.jpg' />
         </div>
         <div>
           <p>Dress Room</p>
-          <img src='https://irisiris99.github.io/blanc/imgs/Room5.jpg' />
+          <img src='https://irisiris99.github.io/blanc/imgs/room5.jpg' />
         </div>
       </div>
     </div>
