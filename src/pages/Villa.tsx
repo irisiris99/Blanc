@@ -26,7 +26,7 @@ function VillaContent () {
       </div>
       <div className="house_content">
         <div>
-          <img src={process.env.PUBLIC_URL + '/imgs/Villaimg1.jpg'} />
+          <img src={process.env.PUBLIC_URL + 'http//irisiris99.github.io/Blanc/imgs/Villaimg1.jpg'} />
         </div>
         <div className="house_content_font">
           <h3>The project of this house of more than 669 m2 was born from the restructuration of a house build in 1989.</h3>

@@ -12,7 +12,7 @@ function Home() {
 function Header() {
   return (
     <div className="header" style={{
-      backgroundImage: `url(${process.env.PUBLIC_URL + '/imgs/background_1.jpg'})`
+      backgroundImage: `url(${process.env.PUBLIC_URL + 'http//irisiris99.github.io/Blanc/imgs/background_1.jpg'})`
     }}>
       <Navbar />
       <HeaderContent />
@@ -25,7 +25,7 @@ function HeaderContent() {
     <div className="header_content">
       <div>
         <h1 id="Blacnhe">Blanche</h1>
-        <img id="logo360" className="infinite_rotating_logo" src={process.env.PUBLIC_URL + '/imgs/logo360.png'} />
+        <img id="logo360" className="infinite_rotating_logo" src={process.env.PUBLIC_URL + 'http//irisiris99.github.io/Blanc/imgs/logo360.png'} />
       </div>
       <div>
         <h2 id="Make">Made by</h2>
