@@ -1,38 +1,377 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya&family=Inter:wght@200&family=Jua&family=Source+Serif+Pro:wght@200&family=Vollkorn&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya&family=Berkshire+Swash&family=Inter:wght@200&family=Jua&family=Source+Serif+Pro:wght@200&family=Vollkorn&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
+body {
+  background: #191919;
+  font-family: "Abril Fatface", cursive;
+  letter-spacing: 1px;
+}
+
+ul {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: ghostwhite;
+}
+
+li a:hover {
+  color: #ffd700;
+  text-decoration: none;
+}
+.navbar li:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+.navbar li:hover:after {
+  width: 100%;
+  background: #ffd700;
+}
+
+h1,
+h2,
+h3 {
+  color: ghostwhite;
+  font-weight: normal;
+}
+p {
+  color: wheat;
+}
+
+/* Navbar */
+.header {
+  width: 100%;
+}
+.navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  background: #191919b8;
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.navbar_logo {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 3%;
+}
+.navbar_logo img {
+  width: 70%;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.navbar_logo img:hover {
+  opacity: 0.8;
+}
+.navbar ul {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar ul li {
+  padding: 0% 3%;
+}
+.navbar ul li a {
+  font-size: 18px;
+  font-weight: bold;
+}
+#promotion {
   pointer-events: none;
+  opacity: 0.6;
+  text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ================= Home =================*/
+.header_content {
+  width: 90%;
+  height: 101vh;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  font-family: "Berkshire Swash", cursive;
+  padding-top: 14%;
 }
-
-.App-link {
-  color: #61dafb;
+.header_content div {
+  width: 30%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
+.header_content div h1 {
+  font-size: 150px;
+  font-weight: 300;
+}
+.header_content div h2 {
+  font-size: 60px;
+  font-weight: 300;
+}
+#Blacnhe {
+  position: relative;
+  left: -40%;
+}
+#Make {
+  position: relative;
+  left: -10%;
+}
+#iris {
+  position: relative;
+  left: 50%;
+}
+#logo360 {
+  position: absolute;
+  left: 57%;
+  top: 30%;
+}
+img.infinite_rotating_logo {
+  animation: rotate_image 15s linear infinite;
+  transform-origin: 50% 50%;
+}
+@keyframes rotate_image {
+  100% {
     transform: rotate(360deg);
   }
+}
+#house {
+  padding-top: 8%;
+}
+
+/* ============= Villa ================= */
+.Villa {
+  width: 96%;
+  margin: auto;
+  padding-top: 15%;
+}
+
+.Villa h1 {
+  font-size: 90px;
+  font-weight: lighter;
+  letter-spacing: 6px;
+}
+
+.Villa .sublist {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10%;
+  margin: 1% 0%;
+}
+
+.Villa .sublist p {
+  font-size: 20px;
+  font-weight: lighter;
+  padding: 0% 2.5%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.Villa .sublist p:hover {
+  color: aquamarine;
+}
+
+.Villa .house_content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Villa .house_content div {
+  width: 50%;
+}
+
+.Villa .house_content_font {
+  margin-top: 30%;
+}
+
+.Villa .house_content_font h3 {
+  font-size: 28px;
+  width: 70%;
+  padding: 5% 0%;
+}
+
+.Villa .house_content_font p {
+  width: 70%;
+  font-size: 16px;
+}
+
+.house_content2 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10% 0%;
+}
+
+.rooms {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5% 0%;
+}
+
+.rooms div {
+  width: 25%;
+}
+
+.rooms div p {
+  font-size: 30px;
+  padding: 2% 0%;
+}
+
+.rooms2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 2%;
+}
+
+.rooms2 div p {
+  font-size: 30px;
+  padding: 2% 0%;
+  text-align: center;
+}
+
+/* ============== Floor ============= */
+.Floor {
+  background-color: #181818;
+}
+
+.Floor_back {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 20%;
+}
+.Floor_back p {
+  font-size: 24px;
+  width: 30%;
+  margin: 15% 0%;
+}
+.Ent_Floor {
+  width: 100%;
+  padding: 5% 0%;
+  display: flex;
+  justify-content: space-between;
+}
+.Ent_FloorFont {
+  width: 30%;
+}
+.Ent_FloorFont ul {
+  position: sticky;
+  top: 4px;
+  padding-top: 30%;
+}
+.Ent_FloorImg {
+  width: 70%;
+  padding-top: 8%;
+}
+.floor_img_box {
+  width: 100%;
+  overflow: hidden;
+}
+.Ent_FloorImg img {
+  width: 100%;
+}
+.Ent_FloorFont ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1%;
+}
+.Ent_FloorFont ul li {
+  width: 40%;
+  min-width: 200px;
+  margin-bottom: 10%;
+  margin-left: 2%;
+  color: white;
+}
+.Ent_Floor div ul li a {
+  font-size: 18px;
+  letter-spacing: 0px;
+}
+
+.Floor_font {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Floor_font div {
+  width: 50%;
+  padding: 5%;
+}
+.Floor_font div h1 {
+  font-size: 4vw;
+}
+.Floor_font div p {
+  font-size: 20px;
+  padding: 3% 0%;
+}
+
+.Floor_img {
+  width: 100%;
+  float: right;
+}
+.Floor_img img {
+  width: 100%;
+  padding: 5%;
+}
+.Floor_img .floor {
+  width: 80%;
+  float: right;
+}
+#floor2 {
+  width: 80%;
+  float: right;
+}
+
+.Features {
+  width: 100%;
+  text-align: center;
+  padding-top: 5%;
+}
+.Features h1 {
+  font-size: 5vw;
+  font-weight: lighter;
+  padding: 8% 0%;
+}
+.floor_icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-bottom: 5%;
+}
+.floor_icons div {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.floor_icons div p {
+  width: 50%;
+  font-size: 20px;
+}
+.floor_icons div h5 {
+  font-size: 16px;
+  font-weight: lighter;
+  color: white;
+  padding: 3% 0%;
 }

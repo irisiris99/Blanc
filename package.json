@@ -10,17 +10,24 @@
     "@types/node": "^16.11.17",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
+    "parallax-imagescroll": "^0.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "react-scroll": "^1.8.4",
+    "redux": "^4.1.2",
     "typescript": "^4.5.4",
     "web-vitals": "^2.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build &&gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -28,6 +35,7 @@
       "react-app/jest"
     ]
   },
+  "homepage": "https//irisiris99.github.io/Blanc",
   "browserslist": {
     "production": [
       ">0.2%",
@@ -39,5 +47,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-router-dom": "^5.3.2",
+    "gh-pages": "^3.2.3"
   }
 }
