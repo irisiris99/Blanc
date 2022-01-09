@@ -19,6 +19,7 @@
     "react-scripts": "5.0.0",
     "react-scroll": "^1.8.4",
     "redux": "^4.1.2",
+    "serve": "^13.0.2",
     "typescript": "^4.5.4",
     "web-vitals": "^2.1.2"
   },
@@ -35,7 +36,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https//irisiris99.github.io/Blanc",
+  "homepage": "http//irisiris99.github.io/Blanc",
   "browserslist": {
     "production": [
       ">0.2%",
