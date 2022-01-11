@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component, useEffect, useState } from 'react';
 import Navbar from "../component/navbar";
 
 const Villa = () => {
@@ -12,6 +12,16 @@ const Villa = () => {
 
 
 function VillaContent () {
+  const [position, setPosition] = useState(0);
+	function onScroll() {
+		setPosition(window.scrollY);
+	}
+	useEffect(() => {
+		window.addEventListener("scroll", onScroll);
+		return () => {
+			window.removeEventListener("scroll", onScroll);
+		};
+	}, []);
   return (
     <div className="Villa">
       <h1>LUXURY VACATION HOUSE</h1>
@@ -25,7 +35,7 @@ function VillaContent () {
         <p>SPA</p>
       </div>
       <div className="house_content">
-        <div>
+        <div className="Villaimg">
           <img src='https://irisiris99.github.io/blanc/imgs/Villaimg1.jpg' />
         </div>
         <div className="house_content_font">
@@ -33,7 +43,7 @@ function VillaContent () {
           <p>After adapting the structure to the new interior’s program and the need to have a swimming pool on the main terrace of the second floor, the aesthetic and strong character of this contemporary villa take place in the antagonism of a hermetic aspect from the exterior and an oasis of light and nature in its interior.</p>
         </div>
       </div>
-      <div className="house_content2">
+      <div className="house_content2" >
         <img src='https://irisiris99.github.io/blanc/imgs/Villaimg2.jpg' />
       </div>
       <div className="rooms">

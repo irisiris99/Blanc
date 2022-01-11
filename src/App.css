@@ -182,7 +182,7 @@ img.infinite_rotating_logo {
   transition: 0.3s ease-in-out;
 }
 .Villa .sublist p:hover {
-  color: aquamarine;
+  color: yellow;
 }
 
 .Villa .house_content {
@@ -190,6 +190,16 @@ img.infinite_rotating_logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+}
+
+.Villaimg {
+  width: 100%;
+  margin-right: 5%;
+  overflow: hidden;
+}
+.Villaimg img {
+  width: 100%;
 }
 
 .Villa .house_content div {
@@ -216,6 +226,10 @@ img.infinite_rotating_logo {
   display: flex;
   justify-content: flex-end;
   padding: 10% 0%;
+}
+
+.house_content2 img {
+  width: 70%;
 }
 
 .rooms {
