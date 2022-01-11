@@ -158,6 +158,7 @@ img.infinite_rotating_logo {
   width: 96%;
   margin: auto;
   padding-top: 15%;
+  overflow: hidden;
 }
 
 .Villa h1 {
@@ -195,11 +196,13 @@ img.infinite_rotating_logo {
 
 .Villaimg {
   width: 100%;
+  background: url("https://irisiris99.github.io/blanc/imgs/Villaimg1.jpg")
+    no-repeat;
   margin-right: 5%;
-  overflow: hidden;
 }
 .Villaimg img {
   width: 100%;
+  visibility: hidden;
 }
 
 .Villa .house_content div {
@@ -223,20 +226,23 @@ img.infinite_rotating_logo {
 
 .house_content2 {
   width: 100%;
-  display: flex;
-  justify-content: flex-end;
   padding: 10% 0%;
+  margin-left: 27%;
+  overflow: hidden;
+  background: url("https://irisiris99.github.io/blanc/imgs/Villaimg2.jpg")
+    no-repeat;
 }
 
 .house_content2 img {
   width: 70%;
+  visibility: hidden;
 }
 
 .rooms {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  padding: 5% 0%;
+  padding: 10% 0%;
 }
 
 .rooms div {

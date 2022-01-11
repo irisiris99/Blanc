@@ -35,15 +35,19 @@ function VillaContent () {
         <p>SPA</p>
       </div>
       <div className="house_content">
-        <div className="Villaimg">
-          <img src='https://irisiris99.github.io/blanc/imgs/Villaimg1.jpg' />
+        <div className="Villaimg" style={{
+          backgroundPositionY: position / 10,
+        }}>
+          <img src='https://irisiris99.github.io/blanc/imgs/Villaimg1.jpg' / >
         </div>
         <div className="house_content_font">
           <h3>The project of this house of more than 669 m2 was born from the restructuration of a house build in 1989.</h3>
           <p>After adapting the structure to the new interior’s program and the need to have a swimming pool on the main terrace of the second floor, the aesthetic and strong character of this contemporary villa take place in the antagonism of a hermetic aspect from the exterior and an oasis of light and nature in its interior.</p>
         </div>
       </div>
-      <div className="house_content2" >
+      <div className="house_content2" style={{
+          backgroundPositionY: position / 5,
+        }}>
         <img src='https://irisiris99.github.io/blanc/imgs/Villaimg2.jpg' />
       </div>
       <div className="rooms">
