@@ -46,32 +46,71 @@ function VillaContent () {
         </div>
       </div>
       <div className="house_content2" style={{
-          backgroundPositionY: position / 5,
+          backgroundPositionY: position / 6,
         }}>
         <img src='https://irisiris99.github.io/blanc/imgs/Villaimg2.jpg' />
       </div>
+      <div className="metro" style={{
+          backgroundPositionX: position / -3,
+        }}>
+        <h1>Metropolitan</h1>
+        <h1> luxury house.</h1>
+      </div>
+      <div className="full_back" style={{
+          backgroundPositionY: position / 4.3,
+        }}>
+
+      </div>
+      <div className="full_back_font">
+        <p>Few windows seen from the street because of the impact of the swimming pool in the whole house’s layout. This particular programmatic need is one of the starting points of architectural concept of the house, keeping like this all the mystery of what is happening inside.</p>
+      </div>
+      <div className="full_back2" style={{
+          backgroundPositionY: position / 2,
+        }}>
+
+      </div>
       <div className="rooms">
         <div>
-          <p>Entertainment</p>
-          <img src='https://irisiris99.github.io/blanc/imgs/room1.jpg' />
+          <div>
+            <p>Entertainment</p>
+          </div>
+          <div className="hidden_box">
+            <img src='https://irisiris99.github.io/blanc/imgs/room1.jpg' />
+          </div>
         </div>
         <div>
-          <p>Kitchen</p>
-          <img src='https://irisiris99.github.io/blanc/imgs/room2.jpg' />
+          <div>
+            <p>Kitchen</p>
+          </div>
+          <div className="hidden_box">
+            <img src='https://irisiris99.github.io/blanc/imgs/room2.jpg' />
+          </div>
         </div>
         <div>
-          <p>Bed Room</p>
-          <img src='https://irisiris99.github.io/blanc/imgs/room3.jpg' />
+          <div>
+            <p>Bed Room</p>
+          </div>
+          <div className="hidden_box">
+            <img src='https://irisiris99.github.io/blanc/imgs/room3.jpg' />
+          </div>
         </div>
       </div>
       <div className="rooms2">
         <div>
-          <p>Fitness Room</p>
-          <img src='https://irisiris99.github.io/blanc/imgs/room4.jpg' />
+          <div>
+            <p>Fitness Room</p>
+          </div>
+          <div className="hidden_box">
+            <img src='https://irisiris99.github.io/blanc/imgs/room4.jpg' />
+          </div>
         </div>
         <div>
-          <p>Dress Room</p>
-          <img src='https://irisiris99.github.io/blanc/imgs/room5.jpg' />
+          <div>
+            <p>Dress Room</p>
+          </div>
+          <div className="hidden_box">
+            <img src='https://irisiris99.github.io/blanc/imgs/room5.jpg' />
+          </div>
         </div>
       </div>
     </div>

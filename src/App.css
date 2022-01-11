@@ -183,7 +183,7 @@ img.infinite_rotating_logo {
   transition: 0.3s ease-in-out;
 }
 .Villa .sublist p:hover {
-  color: yellow;
+  color: sandybrown;
 }
 
 .Villa .house_content {
@@ -198,6 +198,7 @@ img.infinite_rotating_logo {
   width: 100%;
   background: url("https://irisiris99.github.io/blanc/imgs/Villaimg1.jpg")
     no-repeat;
+  background-size: contain;
   margin-right: 5%;
 }
 .Villaimg img {
@@ -231,11 +232,51 @@ img.infinite_rotating_logo {
   overflow: hidden;
   background: url("https://irisiris99.github.io/blanc/imgs/Villaimg2.jpg")
     no-repeat;
+  background-size: 80%;
 }
 
 .house_content2 img {
   width: 70%;
   visibility: hidden;
+}
+
+.metro {
+  width: 100%;
+  text-align: center;
+  background-image: url("../public/imgs/background_3.jpg");
+  background-position: center;
+  padding: 10% 0%;
+}
+.metro h1 {
+  font-size: 100px;
+  padding: 6% 0%;
+}
+.full_back {
+  width: 100%;
+  height: 1px;
+  background-image: url("../public/imgs/background_4.jpg");
+  background-position: center;
+  background-size: contain;
+  padding: 25% 0%;
+}
+.full_back_font {
+  width: 100%;
+  padding: 5% 0%;
+  position: relative;
+  left: 30%;
+}
+.full_back_font p {
+  font-size: 20px;
+  width: 40%;
+}
+.full_back2 {
+  width: 100%;
+  height: 1030px;
+  position: relative;
+  left: 30%;
+  background-image: url("../public/imgs/background_5.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .rooms {
@@ -246,7 +287,20 @@ img.infinite_rotating_logo {
 }
 
 .rooms div {
-  width: 25%;
+  padding: 0% 3%;
+}
+.rooms div .hidden_box {
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.rooms div div img {
+  width: 100%;
+  transition: 0.2s;
+}
+.rooms div div img:hover {
+  transform: scale(1.08);
 }
 
 .rooms div p {
@@ -259,6 +313,19 @@ img.infinite_rotating_logo {
   display: flex;
   justify-content: space-between;
   padding: 3% 2%;
+}
+
+.rooms2 div .hidden_box {
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+.rooms2 div div img {
+  width: 100%;
+  transition: 0.2s;
+}
+.rooms2 div div img:hover {
+  transform: scale(1.08);
 }
 
 .rooms2 div p {
