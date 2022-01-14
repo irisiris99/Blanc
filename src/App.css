@@ -13,6 +13,10 @@ body {
   letter-spacing: 1px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   list-style: none;
 }
@@ -26,7 +30,8 @@ li a:hover {
   color: #ffd700;
   text-decoration: none;
 }
-.navbar li:after {
+.navbar li:after,
+.change_navbar li:after {
   content: "";
   display: block;
   margin: auto;
@@ -35,7 +40,8 @@ li a:hover {
   background: transparent;
   transition: width 0.5s ease, background-color 0.5s ease;
 }
-.navbar li:hover:after {
+.navbar li:hover:after,
+.change_navbar li:hover:after {
   width: 100%;
   background: #ffd700;
 }
@@ -63,6 +69,17 @@ p {
   position: fixed;
   top: 0px;
   z-index: 10;
+  background: transparent;
+}
+.change_navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  z-index: 10;
   background: #191919b8;
   backdrop-filter: saturate(180%) blur(20px);
 }
@@ -81,16 +98,19 @@ p {
 .navbar_logo img:hover {
   opacity: 0.8;
 }
-.navbar ul {
+.navbar ul,
+.change_navbar ul {
   width: 70%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.navbar ul li {
+.navbar ul li,
+.change_navbar ul li {
   padding: 0% 3%;
 }
-.navbar ul li a {
+.navbar ul li a,
+.change_navbar ul li a {
   font-size: 18px;
   font-weight: bold;
 }
@@ -211,7 +231,7 @@ img.infinite_rotating_logo {
 }
 
 .Villa .house_content_font {
-  margin-top: 30%;
+  margin-top: 10%;
 }
 
 .Villa .house_content_font h3 {
@@ -229,7 +249,6 @@ img.infinite_rotating_logo {
   width: 100%;
   padding: 10% 0%;
   margin-left: 27%;
-  overflow: hidden;
   background: url("https://irisiris99.github.io/blanc/imgs/Villaimg2.jpg")
     no-repeat;
   background-size: 80%;
@@ -253,11 +272,9 @@ img.infinite_rotating_logo {
 }
 .full_back {
   width: 100%;
-  height: 1px;
-  background-image: url("../public/imgs/background_4.jpg");
-  background-position: center;
-  background-size: contain;
-  padding: 25% 0%;
+}
+.full_back img {
+  width: 100%;
 }
 .full_back_font {
   width: 100%;
@@ -271,10 +288,36 @@ img.infinite_rotating_logo {
 }
 .full_back2 {
   width: 100%;
-  height: 1030px;
+  height: 1px;
+  padding: 30% 0%;
   position: relative;
   left: 30%;
   background-image: url("../public/imgs/background_5.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.full_back3and4 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  padding: 32% 0%;
+}
+.full_back3 {
+  width: 60%;
+  height: 1px;
+  padding: 20% 0%;
+  background-image: url("../public/imgs/background_6.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-right: 5%;
+}
+.full_back4 {
+  width: 25%;
+  height: 1px;
+  padding: 13% 0%;
+  background-image: url("../public/imgs/background_7.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -312,16 +355,19 @@ img.infinite_rotating_logo {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 3% 2%;
+  padding: 3% 0%;
 }
-
+.rooms2 div div {
+  display: flex;
+  justify-content: center;
+}
 .rooms2 div .hidden_box {
   width: 100%;
   padding: 0;
   overflow: hidden;
 }
 .rooms2 div div img {
-  width: 100%;
+  width: 70%;
   transition: 0.2s;
 }
 .rooms2 div div img:hover {
@@ -332,6 +378,9 @@ img.infinite_rotating_logo {
   font-size: 30px;
   padding: 2% 0%;
   text-align: center;
+}
+
+@media screen and (max-width: 1400px) {
 }
 
 /* ============== Floor ============= */
