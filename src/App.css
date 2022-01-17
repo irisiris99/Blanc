@@ -366,12 +366,12 @@ img.infinite_rotating_logo {
   padding: 0;
   overflow: hidden;
 }
-.rooms2 div div img {
+.hidden_box img {
   width: 70%;
   transition: 0.2s;
 }
-.rooms2 div div img:hover {
-  transform: scale(1.08);
+.hidden_box img:hover {
+  transform: scale(0.9);
 }
 
 .rooms2 div p {
@@ -387,6 +387,22 @@ img.infinite_rotating_logo {
 .Floor {
   background-color: #181818;
 }
+.Floor .spaces {
+  text-align: center;
+  overflow: hidden;
+}
+.Floor .spaces > h2 {
+  margin-top: 10%;
+  font-size: 7vw;
+}
+.Floor .spaces > h1 {
+  font-size: 12vw;
+  -webkit-text-fill-color: #191919;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  position: relative;
+  top: -8vw;
+}
 
 .Floor_back {
   width: 100%;
@@ -394,12 +410,10 @@ img.infinite_rotating_logo {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 20%;
 }
 .Floor_back p {
   font-size: 24px;
   width: 30%;
-  margin: 15% 0%;
 }
 .Ent_Floor {
   width: 100%;
@@ -412,8 +426,8 @@ img.infinite_rotating_logo {
 }
 .Ent_FloorFont ul {
   position: sticky;
-  top: 4px;
-  padding-top: 30%;
+  top: 1px;
+  padding-top: 28%;
 }
 .Ent_FloorImg {
   width: 70%;
@@ -510,4 +524,23 @@ img.infinite_rotating_logo {
   font-weight: lighter;
   color: white;
   padding: 3% 0%;
+}
+
+/* ============== Contact ================ */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact_title {
+  margin-top: 5%;
+}
+.contact_title2 {
+  padding: 5% 0%;
+  position: relative;
+  left: -30%;
+}
+.contact_title2 h1 {
+  font-size: 4vw;
 }

@@ -67,7 +67,7 @@ function VillaContent () {
         </div>
       <Fade bottom>
         <div className="full_back">
-          <img src='imgs/background_4.jpg' />
+          <img src='https://irisiris99.github.io/blanc/imgs/background_4.jpg' />
         </div>
         <div className="full_back_font">
           <p>Few windows seen from the street because of the impact of the swimming pool in the whole house’s layout. This particular programmatic need is one of the starting points of architectural concept of the house, keeping like this all the mystery of what is happening inside.</p>

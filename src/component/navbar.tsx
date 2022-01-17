@@ -19,7 +19,7 @@ function Navbar() {
         <li><Link to="/Villa">THE VILLA</Link></li>
         <li><Link to="/Floor">FLOORS</Link></li>
         <li id="promotion"><a href="#">PROMOTION</a></li>
-        <li><a href="#">CONTECT</a></li>
+        <li><Link to="/Contact">CONTECT</Link></li>
       </ul>
     </div>
   )

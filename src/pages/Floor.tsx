@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component, useEffect, useState } from 'react';
 import Navbar from "../component/navbar";
 const Fade = require('react-reveal/Fade');
 
@@ -13,11 +13,27 @@ const Floor = () => {
 };
 
 function FloorContent () {
+  const [position, setPosition] = useState(0);
+	function onScroll() {
+		setPosition(window.scrollY);
+	}
+	useEffect(() => {
+		window.addEventListener("scroll", onScroll);
+		return () => {
+			window.removeEventListener("scroll", onScroll);
+		};
+	}, []);
   return (
     <div className="Floor">
-      <div className="Floor_back" style={{
-      backgroundImage: `url(https://irisiris99.github.io/blanc/imgs/background_2.jpg)`
-    }}>
+      <div className="spaces">
+        <h2 style={{
+            transform : `translateX(${position / 5}px)` ,
+          }}>All About</h2>
+        <h1 style={{
+            transform : `translateX(-${position / 5}px)` ,
+          }}>s p a c e s</h1>
+      </div>
+      <div className="Floor_back">
         <p>The house consists of three floors: parking and leisure, first floor (bedroom floor), and second floor (living space and swimming pool).</p>
       </div>
       <div className="Ent_Floor">
