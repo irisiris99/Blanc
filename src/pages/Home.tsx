@@ -25,16 +25,13 @@ function HeaderContent() {
     <div className="header_content">
       <div>
         <h1 id="Blacnhe">Blanche</h1>
+      </div>
+      <div className="madeby">
+        <h2 id="Make">Made by</h2>
         <img id="logo360" className="infinite_rotating_logo" src='https://irisiris99.github.io/blanc/imgs/logo360.png' />
       </div>
       <div>
-        <h2 id="Make">Made by</h2>
-      </div>
-      <div>
         <h1 id="iris">iris99</h1>
-      </div>
-      <div id="house" >
-        <h3>- - Luxury Vacation House - -</h3>
       </div>
     </div>
   )

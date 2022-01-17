@@ -11,7 +11,7 @@ function Navbar() {
   });
 
   return (
-    <div className={scrollPosition < 200 ? "navbar" : "change_navbar"}>
+    <div className={scrollPosition < 100 ? "navbar" : "change_navbar"}>
       <div className="navbar_logo">
         <Link to="/*"><img src='https://irisiris99.github.io/blanc/imgs/logo.png' /></Link>
       </div>

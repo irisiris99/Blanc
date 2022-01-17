@@ -21,17 +21,21 @@ ul {
   list-style: none;
 }
 
-li a {
+a {
   text-decoration: none;
   color: ghostwhite;
 }
 
-li a:hover {
+a:hover,
+.contact_info p:hover,
+.contact_info a:hover {
   color: #ffd700;
   text-decoration: none;
 }
 .navbar li:after,
-.change_navbar li:after {
+.change_navbar li:after,
+.contact_info p:after,
+.contact_info a:after {
   content: "";
   display: block;
   margin: auto;
@@ -41,7 +45,9 @@ li a:hover {
   transition: width 0.5s ease, background-color 0.5s ease;
 }
 .navbar li:hover:after,
-.change_navbar li:hover:after {
+.change_navbar li:hover:after,
+.contact_info p:hover:after,
+.contact_info a:hover:after {
   width: 100%;
   background: #ffd700;
 }
@@ -128,9 +134,9 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   font-family: "Berkshire Swash", cursive;
-  padding-top: 14%;
 }
 .header_content div {
   width: 30%;
@@ -139,9 +145,18 @@ p {
   font-size: 150px;
   font-weight: 300;
 }
+.header_content div img {
+  width: 10%;
+}
 .header_content div h2 {
   font-size: 60px;
   font-weight: 300;
+}
+.header_content .madeby {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #Blacnhe {
   position: relative;
@@ -149,16 +164,17 @@ p {
 }
 #Make {
   position: relative;
-  left: -10%;
+  left: 3%;
 }
 #iris {
   position: relative;
   left: 50%;
 }
 #logo360 {
-  position: absolute;
-  left: 57%;
-  top: 30%;
+  width: 10%;
+  min-width: 200px;
+  position: relative;
+  left: 10%;
 }
 img.infinite_rotating_logo {
   animation: rotate_image 15s linear infinite;
@@ -168,9 +184,6 @@ img.infinite_rotating_logo {
   100% {
     transform: rotate(360deg);
   }
-}
-#house {
-  padding-top: 8%;
 }
 
 /* ============= Villa ================= */
@@ -529,18 +542,54 @@ img.infinite_rotating_logo {
 /* ============== Contact ================ */
 
 .contact {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+.space_nav {
+  width: 100%;
+  height: 80px;
 }
 .contact_title {
-  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  padding: 1% 0%;
 }
 .contact_title2 {
-  padding: 5% 0%;
-  position: relative;
-  left: -30%;
+  padding-left: 5%;
 }
 .contact_title2 h1 {
   font-size: 4vw;
+}
+.contact_img {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -5vw;
+  z-index: -1;
+}
+.contact_img img {
+  width: 100%;
+  padding: 0% 5%;
+}
+.contact_info {
+  width: 80%;
+  margin: auto;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+}
+.contact_info a {
+  color: ghostwhite;
+}
+.contact_end {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2%;
 }
