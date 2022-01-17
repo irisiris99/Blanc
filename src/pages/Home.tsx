@@ -24,7 +24,7 @@ function HeaderContent() {
   return (
     <div className="header_content">
       <div>
-        <h1 id="Blacnhe">Blanche</h1>
+        <h1 id="Blanche">Blanche</h1>
       </div>
       <div className="madeby">
         <h2 id="Make">Made by</h2>

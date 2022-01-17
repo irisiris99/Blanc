@@ -41,12 +41,12 @@ function VillaContent () {
         }}>
           <img src='https://irisiris99.github.io/blanc/imgs/Villaimg1.jpg' / >
         </div>
-          <div className="house_content_font">
-            <Fade>
+        <div className="house_content_font">
+          <Fade>
             <h3>The project of this house of more than 669 m2 was born from the restructuration of a house build in 1989.</h3>
             <p>After adapting the structure to the new interior’s program and the need to have a swimming pool on the main terrace of the second floor, the aesthetic and strong character of this contemporary villa take place in the antagonism of a hermetic aspect from the exterior and an oasis of light and nature in its interior.</p>
-            </Fade>
-          </div>
+          </Fade>
+        </div>
       </div>
       <Fade Bottom>
         <div className="house_content2" style={{
@@ -73,9 +73,7 @@ function VillaContent () {
           <p>Few windows seen from the street because of the impact of the swimming pool in the whole house’s layout. This particular programmatic need is one of the starting points of architectural concept of the house, keeping like this all the mystery of what is happening inside.</p>
         </div>
         <Fade right>
-          <div className="full_back2" style={{
-              backgroundPositionY: position / 4.5,
-            }}>
+          <div className="full_back2">
 
           </div>
         </Fade>
