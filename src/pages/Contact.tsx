@@ -24,8 +24,8 @@ function ContactContent () {
 				<h1>Contact<br/>　To Blanc</h1>
 			</div>
 			<div className="contact_img">
-				<img src='imgs/contact_img1.jpg' />
-				<img src='imgs/contact_img2.jpg' />
+				<img src='https://irisiris99.github.io/blanc/imgs/contact_img1.jpg' />
+				<img src='https://irisiris99.github.io/blanc/imgs/contact_img2.jpg' />
 			</div>
 			<div className='contact_info'>
 				<div>
