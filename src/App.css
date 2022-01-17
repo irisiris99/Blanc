@@ -553,7 +553,7 @@ img.infinite_rotating_logo {
 .contact_title {
   display: flex;
   justify-content: center;
-  padding: 1% 0%;
+  padding-top: 10%;
 }
 .contact_title2 {
   padding-left: 5%;
