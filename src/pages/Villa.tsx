@@ -1,13 +1,16 @@
 import React, { Component, useEffect, useState } from 'react';
 import Navbar from "../component/navbar";
+import AnimatedPage from '../component/AnimatedPage';
 const Fade = require('react-reveal/Fade');
 
 const Villa = () => {
   return (
-    <div>
-      <Navbar />
-      <VillaContent />
-    </div>
+    <AnimatedPage>
+      <div>
+        <Navbar />
+        <VillaContent />
+      </div>
+    </AnimatedPage>
   );
 };
 

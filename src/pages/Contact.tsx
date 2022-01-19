@@ -1,12 +1,15 @@
 import React, { Component, useEffect, useState } from 'react';
 import Navbar from "../component/navbar";
+import AnimatedPage from '../component/AnimatedPage';
 
 const Contact = () => {
 	return (
-		<div>
-			<Navbar />
-			<ContactContent />
-		</div>
+		<AnimatedPage>
+			<div>
+				<Navbar />
+				<ContactContent />
+			</div>
+		</AnimatedPage>
 	)
 }
 
