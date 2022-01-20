@@ -1,11 +1,14 @@
 import React, { Component, useState } from 'react';
 import Navbar from "../component/navbar";
+import AnimatedPage from '../component/AnimatedPage';
 
 function Home() {
   return (
-    <div>
-			<Header />
-    </div>
+    <AnimatedPage>
+      <div>
+        <Header />
+      </div>
+    </AnimatedPage>
   );
 }
 

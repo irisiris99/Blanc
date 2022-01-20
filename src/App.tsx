@@ -6,7 +6,6 @@ import Floor from './pages/Floor';
 import Villa from './pages/Villa';
 import Contact from './pages/Contact';
 import { AnimatePresence } from 'framer-motion';
-import AnimatedPage from './component/AnimatedPage';
 
 
 
@@ -15,7 +14,7 @@ import AnimatedPage from './component/AnimatedPage';
 function App() {
   const location = useLocation();
   return (
-    <div>
+    <div className="no-scroll">
       <AnimatePresence exitBeforeEnter>
         <Routes key={location.pathname} location={location}>
           <Route path="/*" element={<Home />} />

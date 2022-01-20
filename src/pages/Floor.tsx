@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from 'react';
+import React, { Component, useEffect, useRef, useState } from 'react';
 import Navbar from "../component/navbar";
 import AnimatedPage from '../component/AnimatedPage';
 const Fade = require('react-reveal/Fade');
@@ -16,6 +16,21 @@ const Floor = () => {
 };
 
 function FloorContent () {
+  const entRef = useRef<HTMLDivElement>(null);
+  const onEntClick = () => {
+    entRef.current?.scrollIntoView({ behavior: 'smooth' });
+      };
+  
+  const FirstRef = useRef<HTMLDivElement>(null);
+  const onFirstClick = () => {
+    FirstRef.current?.scrollIntoView({ behavior: 'smooth' });
+      };
+
+  const SecRef = useRef<HTMLDivElement>(null);
+  const onSecClick = () => {
+    SecRef.current?.scrollIntoView({ behavior: 'smooth' });
+      };
+
   const [position, setPosition] = useState(0);
 	function onScroll() {
 		setPosition(window.scrollY);
@@ -40,24 +55,22 @@ function FloorContent () {
         <p>The house consists of three floors: parking and leisure, first floor (bedroom floor), and second floor (living space and swimming pool).</p>
       </div>
       <div className="Ent_Floor">
-
         <div className="Ent_FloorFont">
           <ul>
             <Fade left>
-              <li><a href="#">── ENTRANCE FLOOR</a></li>
-              <li><a href="#">── FIRST FLOOR</a></li>
-              <li><a href="#">── SECOUND FLOOR</a></li>
+              <button onClick={onEntClick}><p>ㅡENTERANCE FLOOR</p></button>
+              <button onClick={onFirstClick}><p>ㅡFIRST FLOOR</p></button>
+              <button onClick={onSecClick}><p>ㅡSECOUND FLOOR</p></button>
             </Fade>
           </ul>
         </div>
-
         <div className="Ent_FloorImg">
           <Fade right>
           <div className="floor_img_box">
             <img src='https://irisiris99.github.io/blanc/imgs/ent_floor_img1.jpg' />
           </div>
           </Fade>
-          <div className="Floor_font">
+          <div className="Floor_font" ref={entRef}>
             <Fade bottom>
             <div>
               <h1>Enterance Floor</h1>
@@ -82,7 +95,7 @@ function FloorContent () {
           <Fade>
           <img src='https://irisiris99.github.io/blanc/imgs/first_floor_img1.jpg' />
           </Fade>
-          <div className="Floor_font">
+          <div className="Floor_font" ref={FirstRef}>
             <div>
               <Fade bottom>
               <h1>First Floor</h1>
@@ -103,7 +116,7 @@ function FloorContent () {
             <img src='https://irisiris99.github.io/blanc/imgs/first_floor_img5.jpg' />
             </Fade>
           </div>
-          <div className="Floor_font">
+          <div className="Floor_font" ref={SecRef}>
             <div>
               <Fade bottom>
               <h1>Second Floor</h1>

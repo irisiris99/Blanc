@@ -8,13 +8,19 @@
 }
 
 body {
+  -ms-overflow-style: none;
   background: #191919;
   font-family: "Abril Fatface", cursive;
   letter-spacing: 1px;
 }
 
-html {
-  scroll-behavior: smooth;
+::-webkit-scrollbar {
+  width: 3px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 24px;
 }
 
 ul {
@@ -454,16 +460,24 @@ img.infinite_rotating_logo {
   flex-direction: column;
   padding-left: 1%;
 }
-.Ent_FloorFont ul li {
+.Ent_FloorFont ul button {
   width: 40%;
   min-width: 200px;
   margin-bottom: 10%;
   margin-left: 2%;
+  background: transparent;
   color: white;
+  border: none;
+  cursor: pointer;
+  text-align: left;
 }
-.Ent_Floor div ul li a {
+.Ent_FloorFont ul button p {
   font-size: 18px;
-  letter-spacing: 0px;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.Ent_FloorFont ul button p:hover {
+  color: #ffd700;
 }
 
 .Floor_font {

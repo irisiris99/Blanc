@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import { BrowserRouter } from 'react-router-dom';
+import ScrollTop from './component/ScrollTop';
 
 const value :number = 96;
 
@@ -19,6 +20,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
+      <ScrollTop />
         <App />
       </BrowserRouter>
     </Provider>
