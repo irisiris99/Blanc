@@ -46,8 +46,8 @@ function VillaContent () {
         </div>
         <div className="house_content_font">
           <Fade>
-            <h3>The project of this house of more than 669 m2 was born from the restructuration of a house build in 1989.</h3>
-            <p>After adapting the structure to the new interior’s program and the need to have a swimming pool on the main terrace of the second floor, the aesthetic and strong character of this contemporary villa take place in the antagonism of a hermetic aspect from the exterior and an oasis of light and nature in its interior.</p>
+            <h3>It's roughly where the contents of when this building was built will be included.</h3>
+            <p>It roughly contains the concept and design of this building and the explanation of the swimming pool and terrace on the second floor It roughly contains the concept and design of this building and the explanation of the swimming pool and terrace on the second floor.</p>
           </Fade>
         </div>
       </div>
@@ -62,7 +62,7 @@ function VillaContent () {
             backgroundPositionX: position / -3,
           }}>
           <Fade left>
-          <h1>Metropolitan</h1>
+          <h1>Planteria Style</h1>
           </Fade>
           <Fade right>
           <h1> luxury house.</h1>
