@@ -1,4 +1,3 @@
-Typescript / React
 
 https://irisiris99.github.io/blanc/
 
