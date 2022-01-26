@@ -8,9 +8,11 @@ import { createStore } from 'redux';
 import { BrowserRouter } from 'react-router-dom';
 import ScrollTop from './component/ScrollTop';
 
-const value :number = 96;
+const value :string = '010-6850-5607';
+const value2 :string = 'cjg03117@gmail.com';
+const value3 :string = 'https://github.com/irisiris99/blanc';
 
-function reducer(state = value){
+function reducer(state = [value, value2, value3]){
   return state
 }
 

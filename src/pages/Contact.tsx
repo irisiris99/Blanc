@@ -1,6 +1,7 @@
 import React, { Component, useEffect, useState } from 'react';
 import Navbar from "../component/navbar";
 import AnimatedPage from '../component/AnimatedPage';
+import { useSelector } from 'react-redux';
 
 const Contact = () => {
 	return (
@@ -14,6 +15,9 @@ const Contact = () => {
 }
 
 function ContactContent () {
+	const Phone = useSelector( (state) => state[0]);
+	const Email = useSelector( (state) => state[1]);
+	const Github = useSelector( (state) => state[2]);
 
 	return (
 		<div className="contact">
@@ -32,11 +36,11 @@ function ContactContent () {
 			</div>
 			<div className='contact_info'>
 				<div>
-					<a href="https://github.com/irisiris99/blanc">Github :　https://github.com/irisiris99/blanc</a>
+					<a href='https://github.com/irisiris99/blanc'>Github :　{Github}</a>
 				</div>
 				<div>
-					<p>Email :　cjg03117@gmail.com</p>
-					<p>Phone :　010-6850-5607</p>
+					<p>Email :　{Email}</p>
+					<p>Phone :　{Phone}</p>
 				</div>
 			</div>
 			<div className="contact_end">
