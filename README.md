@@ -4,19 +4,4 @@ https://irisiris99.github.io/blanc/
 
 해외의 바다 근처에 있는 고급펜션을 소개하는 웹사이트입니다.
 
-BRAND : Blanc (White의 프랑스어)
-*Logo Image는 Photoshop으로 제작했습니다.
-
-Main Color : Black , White
-
-Fonit Color : Gold
-
-Font : White & Gold
-
-Background : 너무 어둡지않은 Black (#191919)
-
-주 고객층이 20~40대 여성이라 생각하고 제작했기 때문에 밝고 고급스러운 느낌을 주는 Font와 Image를 사용했습니다.
-
-펜션의 이미지에 집중하기 위해 Background는 약간 어두운 색상의 Black 컬러인 #191919를 사용했습니다.
-
 =======================================================================================================
